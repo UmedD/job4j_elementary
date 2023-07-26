@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.simple;
 
 public class ArgMethod {
     public static void main(String[] args) {
