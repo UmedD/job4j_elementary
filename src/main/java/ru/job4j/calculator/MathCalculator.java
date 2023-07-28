@@ -1,20 +1,26 @@
 package ru.job4j.calculator;
 
-import ru.job4j.math.MathFunction;
-
 public class MathCalculator {
     public static double sumAndMultiply(double first, double second) {
-        return MathFunction.sum(first, second)
-                + MathFunction.multiply(first, second);
+        return ru.job4j.math.MathFunction.sum(first, second)
+                + ru.job4j.math.MathFunction.multiply(first, second);
     }
 
-    public static double diffAndDivide(double first, double second) {
-        return MathFunction.difference(first, second)
-                + MathFunction.divide(first, second);
+    public static double diffandDivide(double first, double second) {
+        return ru.job4j.math.MathFunction.difference(first, second)
+                + ru.job4j.math.MathFunction.divide(first, second);
+    }
+
+    public static  double allOperation(double first, double second) {
+        return ru.job4j.math.MathFunction.sum(first, second)
+                + ru.job4j.math.MathFunction.multiply(first, second)
+                + ru.job4j.math.MathFunction.difference(first, second)
+                + ru.job4j.math.MathFunction.divide(first, second);
     }
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-        System.out.println("Результат расчета равен: " + diffAndDivide(20, 10));
+        System.out.println("Результат расчета равен: " + diffandDivide(50, 10));
+        System.out.println("Результат расчета равен: " + allOperation(30, 10));
     }
 }
