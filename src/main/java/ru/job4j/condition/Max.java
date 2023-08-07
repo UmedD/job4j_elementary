@@ -9,7 +9,6 @@ public class Max {
     }
 
     public static void main(String[] args) {
-        int rsl = max(5,5);
-        System.out.println(rsl);
+        System.out.println(max(5, 5));
     }
 }
