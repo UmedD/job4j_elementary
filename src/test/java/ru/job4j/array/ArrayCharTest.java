@@ -18,13 +18,4 @@ class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, pref);
         assertThat(result).isFalse();
     }
-
-    @Test
-    public void whenOtherStartWithPrefixThenTrue() {
-        char[] word = {'S', 'a'};
-        char[] pref = {'S', 'a', 'l', 'a', 'm'};
-        boolean result = ArrayChar.startsWith(word, pref);
-        assertThat(result).isTrue();
-    }
-
 }
