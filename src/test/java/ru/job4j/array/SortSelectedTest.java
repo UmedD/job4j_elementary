@@ -27,4 +27,12 @@ class SortSelectedTest {
         int[] expected = new int[] {10, 20, 30, 40, 50};
         assertThat(result).containsExactly(expected);
     }
+
+    @Test
+    public void whenSort4() {
+        int[] data = new int[] {100, 50, 20, 43, 33};
+        int[] result = SortSelected.sort(data);
+        int[] expected = new int[] {20, 33, 43, 50, 100};
+        assertThat(result).containsExactly(expected);
+    }
 }
